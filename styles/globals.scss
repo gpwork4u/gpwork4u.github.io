@@ -1,0 +1,65 @@
+@import './typography';
+@import './markdown';
+
+html {
+  scroll-padding-top: 54px; /* height of sticky header */
+}
+
+.container {
+  max-width: 630px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.markdown-body img {
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+
+.markdown-body pre .copy-snippet-button {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: #6a737d;
+
+  .fa-check {
+    display: none;
+    color: var(--color-bg-success-inverse);
+  }
+
+  .fa-clipboard {
+    display: block;
+  }
+
+  &.copied {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .fa-check {
+      display: block;
+    }
+
+    .fa-clipboard {
+      display: none;
+    }
+  }
+}
+
+// !Workaround: This fix disqus auto mode within primer css
+#disqus_thread {
+  color-scheme: light !important;
+}
+
+.header-block {
+  height: 240px;
+  transition: max-height 150ms ease-in-out;
+  max-height: 240px;
+
+  &.small {
+    max-height: 100px;
+  }
+}
