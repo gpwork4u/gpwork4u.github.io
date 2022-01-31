@@ -27,7 +27,7 @@ export default function Post({ post, preview }) {
             <article className="mb-32">
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | GP Blog{CMS_NAME}
                 </title>
               </Head>
               <PostHeader
