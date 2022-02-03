@@ -13,7 +13,7 @@ export default function PostPreview({
         <Link as={`./posts/${slug}`} href="./posts/[slug]">
           <a>{title}</a>
         </Link>
-        <span className="text-2xl color-bg-emphasis color-fg-on-emphasis ml-3 rounded">
+        <span className= "text-2xl px-2 color-tag ml-3 rounded">
         {tags}
         </span >
       </h3>
