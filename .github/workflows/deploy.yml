@@ -40,6 +40,7 @@ jobs:
       - name: Build
         env:
           HACKMD_PROFILE: ${{ secrets.HACKMD_PROFILE }}
+          GA_ID: ${{ secrets.GA_ID }}
 
         run: |
           npm i --legacy-peer-deps
